@@ -1,0 +1,19 @@
+I prefer using the llvm linker because it produces smaller executables.
+
+ASM     - nasm     file.asm -f bin -o file.exe
+C/C++   - clang    file.c -fuse-ld=lld -o file.exe
+C#      - mcs      file.cs -out:file | mono file.exe
+Go      - go       run file.go
+Python  - python   file.py
+R       - Rscript  file.r
+Rust    - rustc    file.ru -C prefer-dynamic -C link-arg=-fuse-ld=lld -o file.exe
+Java    - javac    file.java | java file
+Zig     - zig      run file.zig
+Fortran - ifx      file.f90 -fuse-ld=lld -o file.exe (No linker, no libraries)
+Haskell - ghc      file.hs -dynamic -o file.exe
+Lua     - lua      file.lua
+Pascal  - fpc      file.p -ofile
+Perl    - perl     file.perl
+Ruby    - ruby     file.ruby
+Scala   - scalac   file.scala | scala file.exe
+Js      - node     file.js
